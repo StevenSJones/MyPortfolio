@@ -8,6 +8,14 @@ body {
     flex-direction: column;
     height: 100vh; /* Avoid the IE 10-11 `min-height` bug. */
 }
+
+#TheStevens {
+    width: 100px;
+    height: 200px;
+    margin-right: 20px;
+}
+
+
 h1 {
     font-family: 'Times New Roman', Times, serif;
     font-size: 16px;
@@ -19,6 +27,15 @@ p {
     margin: 0 0 20px 0;
 
 }
+
+.rotateimg90 {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
 .content {
     color: #777777; /* per specs*/
     font: 16px Arial; /* font type per specs*/
@@ -30,14 +47,19 @@ p {
     padding: 20px;
     margin: 0 0 20px 0;
 }
+
 .footer {
     color: #777777; /* per specs*/
     background-color: #666666; /* per specs*/
+    margin: 10px;
+    display: flex;
+    overflow: auto;
+    clear: both;
+    text-align: center;
+    float: inherit;
+    border-top: 8px solid #4aaaa5;
     flex-shrink: 0; /* Prevent Chrome, Opera, and Safari from
     letting these items shrink to smaller than their content's
     default minimum size. */
     padding: 20px;
 }
-
-
-
