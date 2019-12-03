@@ -1,0 +1,43 @@
+html, body {
+    height: 100%;
+}
+body {
+    margin: 0;
+    font: 16px Arial; /* per specs*/
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Avoid the IE 10-11 `min-height` bug. */
+}
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    color: #4aaaa5; /* per specs*/
+    border-color: #cccccc; /* per specs*/
+    margin: 0 0 20px 0;
+}
+p {
+    margin: 0 0 20px 0;
+
+}
+.content {
+    color: #777777; /* per specs*/
+    font: 16px Arial; /* font type per specs*/
+    background-color: #ffffff; /* per specs*/
+    border-color: #dddddd;  /* per specs*/
+    flex: 1 0 auto; /* Prevent Chrome, Opera, and Safari from
+    letting these items shrink to smaller than their content's
+    default minimum size. */
+    padding: 20px;
+    margin: 0 0 20px 0;
+}
+.footer {
+    color: #777777; /* per specs*/
+    background-color: #666666; /* per specs*/
+    flex-shrink: 0; /* Prevent Chrome, Opera, and Safari from
+    letting these items shrink to smaller than their content's
+    default minimum size. */
+    padding: 20px;
+}
+
+
+
