@@ -5,16 +5,36 @@
     <title>Steven Jones</title> <!--per specs-->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css"><!--link to style.css
        which is in DIFFERENT folder so requires file path-->
-
+  
   </head>
-  <body>
+  <body id="full-flex">
 
-      <div class="content"><!--named so as this is the main content-->
-        <h1>About Me</h1><!--named so per spec-->
-            <hr>
-        <img id="TheStevens" src="assets/images/TheStevens.jpg" style="width:150px;height:150px;" class="rotateimg90">
+     <div><!-- WANT TO ADD PORTNAV TO DIV AS CLASS AND BUTTONS named so as this is the main content-->
+        <span id="rightfloat">
+          <a class="anvil" href="./index.html">About Me  |   
+          </a>
+          <a class="anvil" href="./contact.html">Contact |    
+          </a>
+          <a class="anvil" href="./portfolio.html">Me |    
+          </a>
+        </span>
+
+        <h1 class="ltheader" id="leftfloat">Steven Jones</h1>
+
+      </div> 
+      
+
+    
+    
+<div class="maincontentlt">
+
+        <h1 id="teal">About Me</h1><!--named so per spec-->
+
+        <hr>
+
+        <img id="TheStevens" src="assets/images/TheStevens.jpg" id="leftfloat" width="30%" height="40%" 
+        class="rotateimg90">
         <!--The source looks like this because in using the relative file path the folders must be named-->
-
 
             <p>
             My name is Steven Jones and I frequent Colorado's front roads and backstreets
@@ -26,10 +46,12 @@
             State."
             </p>
             <p>
-            I currently roam the local terrain delivering hospice equipment as 
-            well as oxygen and other related items to those souls in need whether it be 
-            morning, noon, night, holiday, or weekends. I enter people's lives at the point
-            at which they or their loved ones begin or end their ultimate journey.
+            My immediate family consists of my wife Moriah, Sons Steven and Ge'Ovonni and my
+            daughters Teriah, Jada and Shayla, and mother-in-law Lori. I currently roam 
+            the local terrain delivering hospice equipment as well as oxygen and other related
+            items to those souls in need whether it be morning, noon, night, holiday, or 
+            weekends. I enter people's lives at the point at which they or their loved ones
+            begin or end their ultimate journey.
             </p>
             <p>
             I spend all of my time while not at work or doing coding travelling the country;
@@ -40,8 +62,13 @@
             follow the Boston Bruins in the NHL, the Oakland Raiders in the NFL, the Los Angeles
             Clippers in the NBA and Liverpool in the Premier League.
             </p>
-     </div>
-           <footer class="footer">footer</footer>   
+        </div>
+
+      </div>
+     
+     <div class="blackbackft">
+        <footer class="footer">Copywrite</footer>
+    </div>   
             
   </body>
 </html>
