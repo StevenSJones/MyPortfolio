@@ -10,10 +10,66 @@ p {
 
 }
 
-.maincontentlt { /*main content*/
+.description {
+    height: 50px;
+    width: 100%;
+    background-color: #4aaaa5;
+    color: white;
+    position: absolute;
+    top: 70%;
+    text-align: center;
+    line-height: 9px;
+    font-size: 16px;
+}
+
+.box {
+    height: 230px;
+    width: 30%;
+    display: inline-block;
+    position: relative;
+    margin: 30px;
+}
+
+.box-2{
+    height: 230px;
+    width: 30%;
+    display: inline-block;
+    position: relative;
+    margin: 30px;
+    float: right;
+}
+
+.portPics {
+    width: 20%;
+    height: 20%;
+    position: relative;
+    border-color: #4aaaa5;
+    border-style: solid;
+    object-fit: fill;
+
+}
+
+.pic-container { /*main content for portfolio*/
+    position: relative;
+    text-align: center;
     color: #777777; /* per specs*/
     font: 16px Arial; /* font type per specs*/
     background-color: #ffffff; /* per specs*/
+    border-style: solid;
+    border-color: #dddddd;  /* per specs*/
+    flex: 1 0 auto; /*part of flexbox-0sticky footer/* Prevent Chrome, Opera, and Safari from
+    letting these items shrink to smaller than their content's
+    default minimum size. */
+    padding: 20px;
+    margin: 0 0 20px 0;
+}
+
+
+.indexmain, .contactmain { /*main content for index and contact*/
+    color: #777777; /* per specs*/
+    font: 16px Arial; /* font type per specs*/
+    background-color: #ffffff; /* per specs*/
+    border-style: solid;
     border-color: #dddddd;  /* per specs*/
     flex: 1 0 auto; /*part of flexbox-0sticky footer/* Prevent Chrome, Opera, and Safari from
     letting these items shrink to smaller than their content's
@@ -33,11 +89,6 @@ img {
 }
 
 
-.portnav {
-
-
-}
-
 .portbutton { /*havent made buttons, dont need but do anyway*/
 
     background: linear-gradient(90deg, #4aaaa5, #cccccc);
@@ -55,10 +106,11 @@ img {
     font-size: 16px;
     background-color: #4aaaa5; /* per specs*/
     border-color: #cccccc; /* per specs*/
-    margin: 0 0 20px 0;
+    margin: 10px 70px 0px 40px;
     color: #cccccc;
-    width: 25%;
+    width: 35%;
     height: 40%;
+    padding: 3%;
 }
 
 
@@ -90,7 +142,16 @@ img {
     letting these items shrink to smaller than their content's
     default minimum size. */
     padding: 10px;
+    
 }
+
+.centertext {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
 
 #padup-10 {
   padding-top: 10px;
@@ -180,4 +241,8 @@ img {
 
 #teal {
     color: #4aaaa5 
+}
+
+#white {
+    color: #ffffff
 }
